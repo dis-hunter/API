@@ -1,5 +1,15 @@
 <?php
-require_once "classes.php";
-$obj=new fnc();
+
+require_once "menus\menus.php";
+require_once "layout\layout.php";
+
+
+$ObjMenus=new menus();
+$ObjLayouts=new layout();
+
+
+
+
+
 
 ?>
