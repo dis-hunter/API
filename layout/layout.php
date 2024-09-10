@@ -9,6 +9,7 @@ class layout{
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title>Document</title>
+            <link  rel="stylesheet" href="style.css">
         </head>
         <body>
             <?php
@@ -16,7 +17,8 @@ class layout{
 
               public function footer(){
              ?> 
-            <div>
+            <div class = "footer"  style="text-align: center;"
+          >
                 Copyright &copy: ICS
                  <?php print date("Y"); ?>
             </div>
