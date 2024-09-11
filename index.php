@@ -1,11 +1,8 @@
-
-<?php 
-
+<?php
 require "load.php";
-$ObjLayouts ->heading();
-$ObjMenus ->main_menu();
-$ObjLayouts ->footer();
-$ObjHeadings ->main_banner();
-
-?>
-    
+$ObjLayouts->heading();
+$ObjMenus->main_menu();
+$ObjHeadings->main_banner();
+$ObjLayouts->footer();
+$ObjCont->main_content();
+$ObjCont->side_bar();
