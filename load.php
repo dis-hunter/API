@@ -2,6 +2,8 @@
 
 // Class Auto Load 
 
+ 
+
 function classAutoLoad($classname){
 
     $directories = ["contents", "layouts", "menus"];
@@ -21,6 +23,14 @@ spl_autoload_register('classAutoLoad');
     $ObjMenus = new menus();
     $ObjHeadings = new headings();
     $ObjCont=new contents();
+
+
+
+
+    require "includes\constants.php";
+    require "includes\dbConnection.php";
+
+    $conn = new dbConnection(DBTYPE, HOSTNAME, DBPORT, HOSTUSER, HOSTPASS, DBNAME);
 
 
 
